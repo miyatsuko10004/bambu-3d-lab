@@ -1,0 +1,2 @@
+{"hooks":{"Stop":[{"matcher":"","hooks":[{"type":"command","command":"'/Users/manyo/.gemini/skills/agmsg/scripts/check-inbox.sh' 'codex' '/Users/manyo/develop/bambu-3d-lab'","commandWindows":"& 'C:\\Program Files\\Git\\bin\\bash.exe' -lc 'PATH=''/Users/manyo/.agents/bin'':$PATH; ''/Users/manyo/.gemini/skills/agmsg/scripts/check-inbox.sh'' ''codex'' ''/Users/manyo/develop/bambu-3d-lab'''"}]}]}}
+
