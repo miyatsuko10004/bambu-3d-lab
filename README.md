@@ -8,6 +8,8 @@ Bambu Lab A1 mini で印刷するための 3D モデルを管理・生成する�
 ## 📂 ディレクトリ構成
 
 * **`models/`**: 3Dプリンター用モデルファイル（直接スライサーで開けます）
+  * [`eima_emma_text_only.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/eima_emma_text_only.stl): 提供PDFの筆文字「瑛万」と「emma」だけを厚み3.0mmにした、プレートなしの単色印刷向け文字モデル。
+  * [`eima_emma_text_only_cursive.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/eima_emma_text_only_cursive.stl): 上記の英字をBrush Script MTの接続筆記体にしたバリエーション。
   * [`industrial_planter.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/industrial_planter.stl): 【新規・試作】黒/無骨系 塊根植物用 植木鉢（ハンマード/低ポリ風テクスチャ + メッシュ状排水グレーチング + 一体成形の脚）。
   * [`knit_planter.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/knit_planter.stl): 【新規・試作】ナチュラル/パラメトリック系 観葉植物用 植木鉢（Voronoiセルテクスチャ + 統一感のある排水グレーチング）。
   * [`ichimatsu_planter.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/ichimatsu_planter.stl): 【新規・試作】伝統文様シリーズ「市松」植木鉢。
@@ -21,6 +23,7 @@ Bambu Lab A1 mini で印刷するための 3D モデルを管理・生成する�
   * [`flexi_snake.stl`](file:///Users/manyo/develop/bambu-3d-lab/models/flexi_snake.stl): 【新規】グネグネ曲がる一体成形のフレキシブル・スネーク（背びれ・目付き）。
   * [`fidget_gyro.scad`](file:///Users/manyo/develop/bambu-3d-lab/models/fidget_gyro.scad): ジャイロスコープカスタマイズ用の OpenSCAD ソース。
 * **`scripts/`**: 3Dモデル自動生成スクリプト（Python 3）
+  * [`generate_nameplate.py`](file:///Users/manyo/develop/bambu-3d-lab/scripts/generate_nameplate.py): `assets/瑛万.pdf`の埋め込みベクター筆文字を直接抽出し、「emma」も高解像度で輪郭統合してSTLを生成する。
   * [`generate_industrial_planter.py`](file:///Users/manyo/develop/bambu-3d-lab/scripts/generate_industrial_planter.py): 黒/無骨系 植木鉢STL生成用。
   * [`generate_knit_planter.py`](file:///Users/manyo/develop/bambu-3d-lab/scripts/generate_knit_planter.py): ナチュラル/パラメトリック系 植木鉢STL生成用。
   * [`generate_ichimatsu_planter.py`](file:///Users/manyo/develop/bambu-3d-lab/scripts/generate_ichimatsu_planter.py): 市松文様 植木鉢STL生成用（ドナーメッシュ変位マッピング、要`pip install -r requirements.txt`）。
