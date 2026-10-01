@@ -12,3 +12,7 @@ __pycache__/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# third-party licensed models (personal use only, do not redistribute)
+models/Only_Second_Monitor_Strengthened_Versions.3mf
+models/multifunction_monitor_arm_vesa_mount.3mf

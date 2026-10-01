@@ -20,18 +20,20 @@ OUT_A = ROOT / "models" / "plug_holder_a.stl"
 OUT_B = ROOT / "models" / "plug_holder_b.stl"
 
 LENGTH = 205.0
-WIDTH = 45.0
-HEIGHT = 22.0
+WIDTH = 32.0
+HEIGHT = 17.0
 SLOT_THICK = 2.2  # along Y: blade thickness 1.2 + play
-SLOT_DEPTH = 14.0  # blade length ~12 mm
+SLOT_DEPTH = 13.5  # blade length ~12 mm; floor = HEIGHT - SLOT_DEPTH
 SLOT_END_WALL = 8.0
 SLIT_PITCH = 12.7  # blade pitch (Y distance between the two slits)
 SPLIT_X = LENGTH / 2
 PIN_D = 4.5
 PIN_LEN = 6.0
 PIN_CLEARANCE = 0.2
-PIN_Y = (WIDTH * 0.25, WIDTH * 0.75)
-PIN_Z = 4.0
+# alignment pins sit in the full-height walls beside the slits, mid height
+WALL_C = (WIDTH / 2 - SLIT_PITCH / 2 - SLOT_THICK / 2) / 2
+PIN_Y = (WALL_C, WIDTH - WALL_C)
+PIN_Z = HEIGHT / 2
 
 
 def extrude(poly, z0, z1):
